@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook de Création de Squad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .content-card {
+            background-color: white;
+            border: 1px solid #e2e8f0; /* slate-200 */
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        h1, h2, h3 {
+            color: #1e293b; /* slate-800 */
+        }
+        th {
+            background-color: #f1f5f9; /* slate-100 */
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <div class="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-2">🚀 Playbook de Création de Squad</h1>
+            <p class="text-xl text-slate-500 italic">Transformer nos équipes pour accélérer la livraison de valeur</p>
+        </div>
+
+        <!-- Section 1: Le Contexte et Notre Vision -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold border-b-2 border-sky-500 pb-2 mb-6">1. 🏛️ Le Contexte et Notre Vision (Le "Pourquoi")</h2>
+            
+            <div class="content-card p-6 mb-6">
+                <h3 class="text-xl font-semibold mb-2">Notre Constat</h3>
+                <p>Nos équipes sont talentueuses mais freinées par un écosystème complexe. Les dépendances externes, les aléas techniques et les processus non optimisés ralentissent notre capacité à innover et créent de la frustration.</p>
+            </div>
+            
+            <div class="content-card p-6 mb-6">
+                <h3 class="text-xl font-semibold mb-2">Notre Vision</h3>
+                <ol class="list-decimal list-inside space-y-2">
+                    <li>**Créer des squads autonomes et performantes** en leur donnant les clés du succès dès le premier jour.</li>
+                    <li>**Piloter l'amélioration continue** en se basant sur des données factuelles pour résoudre les problèmes systémiques qui nous ralentissent tous.</li>
+                </ol>
+            </div>
+
+            <h3 class="text-2xl font-semibold mb-4">Nos Principes Directeurs</h3>
+            <div class="overflow-x-auto content-card">
+                <table class="w-full text-left">
+                    <thead class="text-slate-800">
+                        <tr>
+                            <th class="p-4 w-1/3">Principe</th>
+                            <th class="p-4">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t">
+                            <td class="p-4 font-semibold">🧪 Apprendre Avant de Généraliser</td>
+                            <td class="p-4">Nous déploierons cette procédure en **mode pilote** sur 1 à 2 squads pour l'affiner avec le feedback du terrain avant de la déployer à grande échelle.</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4 font-semibold">🛡️ Anticiper pour ne pas subir</td>
+                            <td class="p-4">Nous dotons nos squads d'un **"Backlog de Résilience"** pour qu'un blocage externe ne soit plus synonyme d'inactivité, mais une opportunité d'améliorer la qualité.</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4 font-semibold">📊 Mesurer pour Comprendre</td>
+                            <td class="p-4">Nous remplaçons les perceptions par des **données factuelles**. Le suivi des obstacles nous permettra de piloter nos efforts d'amélioration là où ça compte vraiment.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 2: Les Acteurs et la Gouvernance -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold border-b-2 border-sky-500 pb-2 mb-6">2. 👥 Les Acteurs et la Gouvernance (Le "Qui")</h2>
+
+            <h3 class="text-2xl font-semibold mb-4">2.1. Rôles et Responsabilités Clés</h3>
+            <div class="overflow-x-auto content-card">
+                <table class="w-full text-left">
+                     <thead class="text-slate-800">
+                        <tr>
+                            <th class="p-4 w-1/3">Rôle / Acteur</th>
+                            <th class="p-4">Mission Principale</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t"><td class="p-4 font-semibold">👑 Le Management</td><td class="p-4">Sponsorise et valide les décisions stratégiques.</td></tr>
+                        <tr class="border-t"><td class="p-4 font-semibold">🛠️ Le COE</td><td class="p-4">Orchestre le processus et pilote l'amélioration continue.</td></tr>
+                        <tr class="border-t"><td class="p-4 font-semibold">🧑‍🏫 Le Parrain (Gold/Argent)</td><td class="p-4">Accélère l'autonomie et la montée en compétence de la squad.</td></tr>
+                        <tr class="border-t"><td class="p-4 font-semibold">🎓 Les Mentors Spécialistes</td><td class="p-4">Fournissent une expertise ciblée à la demande (Tech, Agile, PO...).</td></tr>
+                        <tr class="border-t"><td class="p-4 font-semibold">🛡️ Le Scrum Master (SM)</td><td class="p-4">Est le gardien du cadre agile et de la performance de l'équipe.</td></tr>
+                        <tr class="border-t"><td class="p-4 font-semibold">🧭 Le Product Owner (PO)</td><td class="p-4">Maximise la valeur du produit livré par la squad.</td></tr>
+                        <tr class="border-t"><td class="p-4 font-semibold">👨‍💻 La Squad (Équipe de Dev)</td><td class="p-4">Construit un produit de qualité de manière incrémentale.</td></tr>
+                        <tr class="border-t"><td class="p-4 font-semibold">🏢 Les Équipes Tiers (AL, PRODSEC...)</td><td class="p-4">Sont des fournisseurs de services et des partenaires clés.</td></tr>
+                        <tr class="border-t"><td class="p-4 font-semibold">🗣️ Les Champions Tiers (Référents)</td><td class="p-4">Fluidifient la collaboration et accélèrent la résolution des problèmes.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="text-2xl font-semibold mt-8 mb-4">2.2. Calendrier des Rituels de Gouvernance</h3>
+            <div class="overflow-x-auto content-card">
+                <table class="w-full text-left">
+                     <thead class="text-slate-800">
+                        <tr>
+                            <th class="p-4">Rituel / Meeting</th>
+                            <th class="p-4">Fréquence</th>
+                            <th class="p-4">Organisateur</th>
+                            <th class="p-4">Objectif</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t"><td class="p-4 font-semibold">Revue des Dépendances</td><td class="p-4">Mensuelle</td><td class="p-4">COE</td><td class="p-4">**Stratégique :** Résoudre les problèmes systémiques avec le Management.</td></tr>
+                        <tr class="border-t"><td class="p-4 font-semibold">Revue des Obstacles</td><td class="p-4">Bi-hebdomadaire</td><td class="p-4">COE</td><td class="p-4">**Tactique :** Identifier les obstacles récurrents avec les Scrum Masters.</td></tr>
+                        <tr class="border-t"><td class="p-4 font-semibold">Synchronisation des Mentors</td><td class="p-4">Mensuelle</td><td class="p-4">COE</td><td class="p-4">**Communauté :** Partager les bonnes pratiques de coaching.</td></tr>
+                        <tr class="border-t"><td class="p-4 font-semibold">War Room (Circuit Court)</td><td class="p-4">À la demande</td><td class="p-4">Scrum Master</td><td class="p-4">**Urgence :** Résoudre un blocage critique en moins de 48h.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 3: Le Parcours -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold border-b-2 border-sky-500 pb-2 mb-6">3. 🗺️ Le Parcours de Création d'une Squad (Le "Comment")</h2>
+            
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Phase 0 : 🏁 Pré-Lancement – La Décision</h3>
+                    <p>Le Management définit la mission de la squad, alloue le budget, et nomme le PO.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Phase 1 : ⚙️ Préparation – L'Assemblée et l'Outillage</h3>
+                    <div class="content-card p-6 border-l-4 border-sky-500">
+                        <h4 class="font-bold text-lg mb-2">Go/No-Go : La Checklist de Lancement</h4>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>✅ PO nommé</li>
+                            <li>✅ SM assigné</li>
+                            <li>✅ Noyau technique de 3+ ingénieurs constitué</li>
+                            <li>✅ Modèle de parrainage et Parrain confirmés</li>
+                            <li>✅ Mission validée</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-sky-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold text-sky-800 mb-2">🎓 Sas d'Acculturation (Si recrutement échelonné)</h4>
+                    <p class="text-sky-700">Les premiers membres arrivés ne sont pas en attente, ils sont en mission : Explorer (visites ciblées), Apprendre (POCs), et Contribuer (documentation).</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Phase 2 : 🌱 Incubation – L'Accompagnement Adaptatif</h3>
+                    <p class="mb-4"><span class="font-semibold">Durée :</span> Flexible, jusqu'à l'atteinte des critères de maturité.</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="p-4 border rounded-lg">
+                            <h4 class="font-semibold text-lg">Modèle GOLD 🥇 (Parrain Intégré)</h4>
+                            <p>Le Parrain est un coach-joueur. Il consacre son temps au pair-programming et à la revue de code.</p>
+                        </div>
+                        <div class="p-4 border rounded-lg">
+                            <h4 class="font-semibold text-lg">Modèle ARGENT 🥈 (Parrain Mentor)</h4>
+                            <p>Le Parrain est un guide. Le coaching intensif est réalisé via des Immersions Ciblées avec les Mentors Spécialistes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <h4 class="text-lg font-semibold text-green-800 mb-2">▶️ Le "Bootstrap" du Sprint 1 : La Checklist de Démarrage</h4>
+                    <ol class="list-decimal list-inside space-y-1 text-green-700">
+                        <li>**Environnement :** Obtenir les Accès, configurer les Postes, créer les Canaux de Communication.</li>
+                        <li>**Technique :** Initialiser GitLab, créer une CI "Hello World", se connecter à Artifactory.</li>
+                        <li>**Agile :** Configurer JIRA, préparer le Premier Backlog, planifier les Rituels Scrum.</li>
+                        <li>**Dépendances :** Initier la Déclaration de Produit (AL) et les Prérequis Sécurité (PRODSEC).</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Phase 3 : 🕊️ Autonomisation – La Prise d'Envol</h3>
+                    <p>Le Parrain et le COE prennent de la distance. Une rétrospective formelle de fin de parrainage marque le transfert de responsabilité.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Phase 4 : 📊 Suivi et Mesure de la Maturité</h3>
+                    <p>Le COE évalue l'autonomie de la squad via une **Revue de Maturité** basée sur des critères observables (pas d'outillage complexe requis).</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 4: La Boîte à Outils -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold border-b-2 border-sky-500 pb-2 mb-6">4. 🛠️ La Boîte à Outils de la Transformation</h2>
+
+            <div class="space-y-6">
+                <div class="content-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">4.1. Le Registre des Obstacles Externes</h3>
+                    <p class="mb-4">Un processus appliqué à **TOUTES** les squads pour rendre visibles les obstacles, les quantifier, et les escalader de manière factuelle via un espace JIRA dédié.</p>
+                    <div class="bg-slate-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Catégorisation des Obstacles Externes :</h4>
+                        <ul class="list-disc list-inside space-y-1 text-sm">
+                            <li>**📦 Qualité de la livraison :** Une feature livrée par une équipe tierce contient des bugs bloquants.</li>
+                            <li>**⏳ Livraison externe retardée :** Une dépendance n'est pas prête à la date convenue.</li>
+                            <li>**🔌 Incident / Instabilité technique :** Un environnement ou un service externe est en panne.</li>
+                            <li>**🚦 Attente d'une action externe :** Attente d'un accès, d'une ouverture de flux, d'une validation...</li>
+                            <li>**📚 Manque d'information / Documentation :** Une documentation est manquante, obsolète ou peu claire.</li>
+                            <li>**👻 Manque de disponibilité :** Une équipe ou un contact clé n'est pas joignable ou ne répond pas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">4.2. La Gestion des Obstacles Internes et Sécurité Psychologique</h3>
+                    <p>Les obstacles internes (dette technique, manque de compétence...) sont gérés par le Scrum Master avec l'appui du Parrain. L'objectif est de renforcer l'autonomie et de cultiver la **sécurité psychologique** pour que chacun puisse exprimer ses difficultés sans crainte.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Motivation -->
+        <section>
+            <h2 class="text-3xl font-bold border-b-2 border-sky-500 pb-2 mb-6">5. ❤️‍🔥 Stratégie de Motivation et de Gestion du Changement</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Pour la Squad</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>🎉 Célébrer les Petites Victoires</li>
+                        <li>📈 Rendre les Progrès Visibles</li>
+                        <li>📢 Donner un Sens à la Remontée d'Obstacles</li>
+                    </ul>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Pour les Parrains/Mentors</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>🤝 Animer leur Communauté</li>
+                        <li>📝 Instaurer un Feedback Formel</li>
+                        <li>🏆 Rendre la Reconnaissance Tangible</li>
+                    </ul>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold mb-2">Pour les Équipes Tiers</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>📜 Négocier des "SLA de Collaboration"</li>
+                        <li>👥 Impliquer dans la Résolution</li>
+                        <li>🙌 Valoriser leur Contribution</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
