@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook de Reboost de Squad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .content-card {
+            background-color: white;
+            border: 1px solid #e2e8f0; /* slate-200 */
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #1e293b; /* slate-800 */
+        }
+        th {
+            background-color: #f1f5f9; /* slate-100 */
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <div class="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-2">🌱 Playbook de Reboost de Squad</h1>
+            <p class="text-xl text-slate-500 italic">Aider nos équipes à surmonter les plateaux et à retrouver leur plein potentiel</p>
+        </div>
+
+        <!-- Section 1: Le Contexte et Notre Vision -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold border-b-2 border-sky-500 pb-2 mb-6">1. 🏛️ Le Contexte et Notre Vision (Le "Pourquoi")</h2>
+            
+            <div class="bg-sky-50 p-6 rounded-lg mb-6">
+                <h4 class="text-lg font-semibold text-sky-800 mb-2">🧩 À qui s'adresse ce Playbook ?</h4>
+                <p class="text-sky-700">Ce document est un cadre de coaching pour les <strong>Managers, Scrum Masters et membres du COE</strong> qui accompagnent une squad existante souhaitant améliorer sa performance et sa dynamique.</p>
+            </div>
+
+            <div class="content-card p-6 mb-6">
+                <h3 class="text-xl font-semibold mb-2">Le Constat</h3>
+                <p>Certaines de nos squads, bien qu'opérationnelles, rencontrent des difficultés : vélocité en baisse, démotivation, frictions internes ou externes. L'étude de maturité DevOps (DORA) nous a fourni d'excellents indicateurs techniques, mais il nous manque un cadre pour adresser les dimensions <strong>organisationnelles, humaines et produit</strong>.</p>
+            </div>
+            
+            <div class="content-card p-6 mb-6">
+                <h3 class="text-xl font-semibold mb-2">Notre Objectif</h3>
+                <p>Fournir une approche structurée et collaborative pour permettre à chaque squad de :</p>
+                <ol class="list-decimal list-inside space-y-2 mt-2">
+                    <li><strong>Poser un diagnostic à 360°</strong> de sa situation, en complément des métriques DORA.</li>
+                    <li><strong>Construire son propre plan d'amélioration</strong> en se concentrant sur les points à plus fort impact.</li>
+                    <li><strong>Retrouver une dynamique de succès</strong> et d'amélioration continue.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Section 2: Le Cadre d'Analyse -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold border-b-2 border-sky-500 pb-2 mb-6">2. 🔍 Le Cadre d'Analyse : Un Diagnostic à 360°</h2>
+            <p class="mb-4">Pour un reboost efficace, nous devons regarder au-delà de la technique. Nous proposons un diagnostic qui s'articule autour de 3 axes complémentaires, à évaluer avec l'équipe.</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="content-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">🧭 Produit (La Valeur)</h3>
+                    <p class="text-sm mb-4">La squad construit-elle la bonne chose ?</p>
+                    <ul class="list-disc list-inside space-y-2 text-sm">
+                        <li><strong>Symptômes :</strong> Le PO semble surchargé, les User Stories sont floues, les stakeholders se plaignent de ne pas avoir ce qu'ils attendent.</li>
+                        <li><strong>Questions à se poser :</strong> La vision produit est-elle claire et partagée ? Le backlog est-il sain et priorisé par la valeur ? Interagissons-nous assez avec nos utilisateurs ?</li>
+                        <li><strong>Outils :</strong> Lean Canvas, Story Mapping, Interviews utilisateurs.</li>
+                    </ul>
+                </div>
+                <div class="content-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">⚙️ Processus (Le Flux)</h3>
+                    <p class="text-sm mb-4">La squad travaille-t-elle de manière fluide ?</p>
+                    <ul class="list-disc list-inside space-y-2 text-sm">
+                        <li><strong>Symptômes :</strong> Les sprints ne sont jamais terminés, les rituels sont perçus comme une perte de temps, l'équipe est constamment bloquée par des dépendances externes.</li>
+                        <li><strong>Questions à se poser :</strong> Nos rituels sont-ils efficaces ? Comment gérons-nous nos obstacles ? Notre "Definition of Done" est-elle respectée ?</li>
+                        <li><strong>Outils :</strong> Registre des Obstacles, Value Stream Mapping, Rétrospectives thématiques.</li>
+                    </ul>
+                </div>
+                <div class="content-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">❤️‍🔥 Personnes (La Dynamique)</h3>
+                    <p class="text-sm mb-4">L'équipe est-elle en bonne santé ?</p>
+                    <ul class="list-disc list-inside space-y-2 text-sm">
+                        <li><strong>Symptômes :</strong> Tensions dans l'équipe, manque d'entraide, démotivation, turnover.</li>
+                        <li><strong>Questions à se poser :</strong> Le niveau de confiance est-il élevé ? La collaboration est-elle naturelle ? La charge de travail est-elle soutenable ?</li>
+                        <li><strong>Outils :</strong> Team Health Check, Charte d'Équipe, Ateliers de feedback.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Le Parcours de Reboost -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold border-b-2 border-sky-500 pb-2 mb-6">3. 🗺️ Le Parcours de Reboost en 4 Étapes</h2>
+            
+            <div class="space-y-6">
+                <div class="content-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">Étape 1 : Diagnostic & Alignement</h3>
+                    <p><strong>Objectif :</strong> Créer une compréhension partagée et factuelle des problèmes.</p>
+                    <p><strong>Actions :</strong> Le Scrum Master (ou le COE) anime un atelier de <strong>Diagnostic 360°</strong> avec l'ensemble de la squad. On y analyse les 3 axes (Produit, Processus, Personnes) et on croise ces observations qualitatives avec les données de l'étude DORA. On ne cherche pas de coupable, on met les problèmes sur la table.</p>
+                    <p class="mt-2 text-sm italic"><strong>Livrable :</strong> Un "radar de maturité" ou une liste de constats partagés, validée par toute l'équipe.</p>
+                </div>
+                <div class="content-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">Étape 2 : Co-construction du Plan d'Amélioration</h3>
+                    <p><strong>Objectif :</strong> Donner à l'équipe la pleine propriété de sa trajectoire d'amélioration.</p>
+                    <p><strong>Actions :</strong> Sur la base du diagnostic, l'équipe identifie par vote ou discussion les <strong>1 à 3 axes d'amélioration prioritaires</strong> qui auront le plus d'impact. Pour chaque axe, elle définit des actions concrètes, mesurables et réalistes à accomplir durant le prochain QAP.</p>
+                    <p class="mt-2 text-sm italic"><strong>Livrable :</strong> Un plan d'action formalisé (sur Confluence ou JIRA), porté par l'équipe.</p>
+                </div>
+                <div class="content-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">Étape 3 : Implémentation & Coaching Ciblé</h3>
+                    <p><strong>Objectif :</strong> Mettre en œuvre le plan d'action avec le soutien nécessaire.</p>
+                    <p><strong>Actions :</strong> La squad intègre ses actions d'amélioration dans ses sprints. Si une action nécessite une compétence externe (ex: "Améliorer nos pratiques de test"), le Scrum Master sollicite le COE pour organiser un coaching ciblé avec un <strong>Mentor Spécialiste</strong> du pool d'experts.</p>
+                    <p class="mt-2 text-sm italic"><strong>Livrable :</strong> Les actions d'amélioration sont réalisées.</p>
+                </div>
+                <div class="content-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">Étape 4 : Mesure & Célébration</h3>
+                    <p><strong>Objectif :</strong> Ancrer la dynamique d'amélioration continue.</p>
+                    <p><strong>Actions :</strong> À la fin du QAP, l'équipe organise une rétrospective dédiée à son plan de reboost. Elle mesure les progrès réalisés par rapport aux objectifs qu'elle s'était fixés. Les succès, même modestes, sont célébrés pour renforcer la motivation et la confiance.</p>
+                    <p class="mt-2 text-sm italic"><strong>Livrable :</strong> Un bilan des actions menées et la décision de continuer sur un nouveau cycle d'amélioration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: La Boîte à Outils -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold border-b-2 border-sky-500 pb-2 mb-6">4. 🛠️ La Boîte à Outils du Reboost</h2>
+
+            <div class="space-y-6">
+                <div class="content-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">4.1. Modèle de Radar de Maturité</h3>
+                    <p class="mb-4">Le Radar de Maturité n'est pas un outil de jugement, mais un support de conversation. Il permet à l'équipe de s'auto-évaluer et d'identifier collectivement ses axes d'amélioration. Voici un exemple concret de résultat d'atelier.</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-sm">
+                            <thead class="text-slate-800">
+                                <tr>
+                                    <th class="p-3">Axe de Diagnostic</th>
+                                    <th class="p-3">Critère d'Évaluation</th>
+                                    <th class="p-3">Score / Constat</th>
+                                    <th class="p-3">Causes Racines (Pourquoi ?)</th>
+                                    <th class="p-3">Pistes d'Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-t"><td class="p-3 font-semibold">🧭 Produit</td><td class="p-3">Clarté de la Vision Produit</td><td class="p-3">🟠 <strong>Moyen.</strong> "On manque de visibilité à 3 mois."</td><td class="p-3">PO surchargé, User Stories tardives.</td><td class="p-3">Organiser un atelier <strong>Story Mapping</strong>.</td></tr>
+                                <tr class="border-t"><td class="p-3"></td><td class="p-3">Connaissance des Utilisateurs</td><td class="p-3">🔴 <strong>Faible.</strong> "On ne parle jamais aux utilisateurs."</td><td class="p-3">Processus ne prévoyant pas de contact direct.</td><td class="p-3">Inviter un utilisateur clé à la Sprint Review.</td></tr>
+                                <tr class="border-t"><td class="p-3 font-semibold">⚙️ Processus</td><td class="p-3">Fluidité des Déploiements</td><td class="p-3">🔴 <strong>Faible.</strong> "On perd beaucoup de temps, l'environnement est instable."</td><td class="p-3">Dépendance AL : API lente, doc obsolète.</td><td class="p-3">Tracer <strong>chaque incident</strong> dans le Registre des Obstacles.</td></tr>
+                                <tr class="border-t"><td class="p-3"></td><td class="p-3">Qualité (Respect de la DoD)</td><td class="p-3">🟠 <strong>Moyen.</strong> "On manque de temps pour les tests."</td><td class="p-3">Pression sur les délais, manque de compétence.</td><td class="p-3">Allouer 10% de la capacité à la formation/tests.</td></tr>
+                                <tr class="border-t"><td class="p-3 font-semibold">❤️‍🔥 Personnes</td><td class="p-3">Charge de Travail</td><td class="p-3">🔴 <strong>Faible.</strong> "On est constamment sous l'eau."</td><td class="p-3">Estimations sous-évaluées, urgences.</td><td class="p-3">Le SM doit protéger le sprint, le PO doit prioriser plus fermement.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="content-card p-6">
+                    <h3 class="text-xl font-semibold mb-2">4.2. Stratégie de Gestion des Divergences (Le cas "Tout va bien chez nous")</h3>
+                    <p class="mb-4">Quand une équipe dépendante ne partage pas le même constat sur un problème, la seule solution est de <strong>sortir du débat d'opinions pour entrer dans l'analyse de faits</strong>.</p>
+                    <ol class="list-decimal list-inside space-y-3">
+                        <li><strong>Objectiver le Problème en Interne :</strong> Utiliser le Radar de Maturité pour aligner la squad sur une perception commune ("De notre point de vue, nous subissons des frictions...").</li>
+                        <li><strong>Quantifier l'Impact (Étape la plus importante) :</strong> Le Scrum Master utilise le <strong>Registre des Obstacles Externes</strong> pour tracer <strong>chaque incident</strong> de manière rigoureuse, en calculant le coût en jours-personne perdus.</li>
+                        <li><strong>Dépersonnaliser la Conversation :</strong> L'objectif n'est jamais d'accuser une équipe, mais d'améliorer un <strong>processus</strong>. On attaque le système, pas les gens.</li>
+                        <li><strong>Utiliser la Gouvernance pour Présenter les Données :</strong> Le COE utilise les données chiffrées lors de la <strong>"Revue des Dépendances"</strong> pour transformer un conflit potentiel en une décision d'investissement collaborative, pilotée par un objectif commun.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 5: Gouvernance -->
+        <section>
+            <h2 class="text-3xl font-bold border-b-2 border-sky-500 pb-2 mb-6">5. 🏛️ Gouvernance du Processus de Reboost</h2>
+            <div class="overflow-x-auto content-card">
+                <table class="w-full text-left">
+                     <thead class="text-slate-800">
+                        <tr>
+                            <th class="p-4">Acteur</th>
+                            <th class="p-4">Rôle dans le Reboost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t">
+                            <td class="p-4 font-semibold">Le Manager de la Squad</td>
+                            <td class="p-4">Sponsorise la démarche, protège le temps de l'équipe pour l'amélioration, et participe à la résolution des obstacles qui le concernent.</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4 font-semibold">Le Scrum Master</td>
+                            <td class="p-4">Est le <strong>pilote</strong> du processus au sein de la squad. Il facilite les ateliers de diagnostic, aide l'équipe à construire son plan d'action et en suit la mise en œuvre.</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-4 font-semibold">Le COE</td>
+                            <td class="p-4">Est le <strong>facilitateur et le coach</strong> du processus. Il fournit les outils (diagnostic, Health Check), forme les SMs, et organise le coaching spécialisé si nécessaire.</td>
+                        </tr>
+                         <tr class="border-t">
+                            <td class="p-4 font-semibold">La Squad</td>
+                            <td class="p-4">Est <strong>l'acteur principal</strong>. Elle s'approprie le diagnostic, construit son plan d'action et le met en œuvre. Le reboost ne peut pas être imposé, il doit être porté par l'équipe.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+</body>
