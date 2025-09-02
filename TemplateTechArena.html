@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template : Proposition TechArena</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .template-section {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-weight: 700;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .placeholder {
+            background-color: #f9fafb;
+            border-left: 4px solid #d1d5db;
+            padding: 1rem;
+            color: #4b5563;
+            border-radius: 0.25rem;
+        }
+        .example {
+            font-style: italic;
+            color: #6b7280;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+            border-top: 1px dashed #e5e7eb;
+            padding-top: 0.5rem;
+        }
+        .checklist li {
+            display: flex;
+            align-items: center;
+        }
+        .checklist li::before {
+            content: '☐';
+            font-size: 1.25rem;
+            margin-right: 0.75rem;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
+
+        <header class="text-center mb-6">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Template de Proposition pour la TechArena</h1>
+            <p class="mt-2 text-gray-600">Ce document est un modèle à suivre pour soumettre un sujet à la TechArena. Son objectif est de préparer un dossier clair, factuel et complet.</p>
+        </header>
+
+        <div class="template-section">
+            <h2 class="text-xl">1. Sujet de la Proposition</h2>
+            <div class="placeholder">
+                <p><strong>[Inscrivez ici le titre de votre proposition]</strong></p>
+                <p class="example">Ex: "Standardisation de l'utilisation de `Poetry` pour la gestion des dépendances Python" ou "Évolution des règles de nommage des `namespaces` Vault".</p>
+            </div>
+        </div>
+
+        <div class="template-section">
+            <h2 class="text-xl">2. Le(s) Porteur(s)</h2>
+            <div class="placeholder">
+                 <p>Indiquez le nom, le rôle et la Squad des personnes qui portent cette proposition.</p>
+            </div>
+        </div>
+        
+        <div class="template-section">
+            <h2 class="text-xl">3. La Problématique</h2>
+            <div class="placeholder">
+                <p>[Expliquez ici le problème actuel]</p>
+                <p class="example">Ex: "Le standard actuel sur X nous oblige à maintenir manuellement des listes de dépendances, ce qui a causé 2 incidents en production le mois dernier suite à des oublis et ralentit nos déploiements de 20% en moyenne."</p>
+            </div>
+        </div>
+        
+        <div class="template-section">
+            <h2 class="text-xl">4. La Proposition</h2>
+            <div class="placeholder">
+                <p>[Détaillez ici votre proposition]</p>
+                <p class="example">Ex: "Nous proposons d'adopter l'outil Y pour automatiser la gestion des dépendances dans tous les projets Python. L'outil sera configuré avec le profil Z, et un guide de prise en main sera ajouté à la documentation du COE."</p>
+            </div>
+        </div>
+        
+        <div class="template-section">
+            <h2 class="text-xl">5. Le Rationnel de la Proposition</h2>
+            <div class="placeholder">
+                <p>[Argumentez ici sur les bénéfices attendus de votre solution]</p>
+                <p class="example">Ex: "L'adoption de l'outil Y va fiabiliser nos déploiements, réduire le risque d'incident de X% et faire gagner environ 2h par sprint et par développeur."</p>
+            </div>
+        </div>
+
+        <div class="template-section">
+            <h2 class="text-xl">6. Alternatives Étudiées</h2>
+             <div class="placeholder">
+                <p>[Listez les autres options envisagées et expliquez pourquoi elles ont été écartées]</p>
+                 <p class="example">Ex: Alternative 1 - Outil Z : Rejeté car le coût de licence est prohibitif. Alternative 2 - Script maison : Rejeté car trop coûteux à maintenir.</p>
+            </div>
+        </div>
+        
+        <div class="template-section">
+            <h2 class="text-xl">7. Analyse d'Impacts</h2>
+            <div class="placeholder">
+                 <p>[Évaluez l'impact de votre proposition sur les différentes composantes de notre écosystème]</p>
+            </div>
+        </div>
+        
+        <div class="template-section">
+            <h2 class="text-xl">8. Chiffrage et Coûts (si applicable)</h2>
+            <div class="placeholder">
+                <p>[Estimez l'effort de mise en place, de migration, et les coûts éventuels]</p>
+            </div>
+        </div>
+
+        <div class="template-section">
+            <h2 class="text-xl">9. Plan de Déploiement / Migration</h2>
+             <div class="placeholder">
+                <p>[Proposez un plan macroscopique pour passer de la situation actuelle à la cible]</p>
+            </div>
+        </div>
+
+        <div class="template-section">
+            <h2 class="text-xl">✅ Checklist de Pré-soumission</h2>
+            <div class="placeholder">
+                <p>Avant de soumettre, ai-je bien vérifié que...</p>
+                <ul class="checklist mt-4 space-y-2">
+                    <li>Mon problème est chiffré ou illustré par des exemples concrets ?</li>
+                    <li>J'ai discuté de cette proposition avec mon Tech Lead et mon PO ?</li>
+                    <li>Mon analyse d'impact couvre bien toutes les équipes concernées ?</li>
+                    <li>Ma proposition est claire et non-ambiguë ?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

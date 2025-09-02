@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographie : Le Processus TechArena</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .kpi-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            border: 1px solid #e2e8f0;
+        }
+        .kpi-value {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #0D47A1;
+        }
+        .kpi-label {
+            font-weight: 500;
+            color: #475569;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <div class="container mx-auto px-4 py-8 md:py-12 max-w-5xl">
+
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">La TechArena en Action</h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">Une gouvernance technique collaborative pour accélérer nos projets et harmoniser nos pratiques.</p>
+        </header>
+
+        <section id="kpis" class="mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 text-slate-800">Nos Premiers Résultats</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="kpi-card">
+                    <div class="kpi-value">22</div>
+                    <div class="kpi-label">Sujets Traités ce Trimestre</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value">85%</div>
+                    <div class="kpi-label">Adhésion aux Standards Validés</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value">&lt;3 Jours</div>
+                    <div class="kpi-label">Temps de Décision Moyen</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="mb-12 md:mb-16 p-6 md:p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-3xl font-bold text-center mb-8 text-slate-800">Le Flux de Décision en 3 Étapes</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-6">
+                
+                <div class="flex-1 text-center p-6 bg-slate-50 rounded-xl border border-slate-200">
+                    <div class="text-5xl mb-3">📝</div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">1. Proposition</h3>
+                    <p class="text-slate-600">Un dossier complet et factuel est préparé en asynchrone pour garantir une base de discussion solide.</p>
+                </div>
+
+                <div class="text-4xl text-blue-300 font-light transform rotate-90 md:rotate-0">→</div>
+                
+                <div class="flex-1 text-center p-6 bg-slate-50 rounded-xl border border-slate-200">
+                    <div class="text-5xl mb-3">💬</div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">2. Session</h3>
+                    <p class="text-slate-600">Un débat constructif d'une heure maximum avec un quorum d'experts pour challenger la proposition.</p>
+                </div>
+
+                <div class="text-4xl text-blue-300 font-light transform rotate-90 md:rotate-0">→</div>
+
+                <div class="flex-1 text-center p-6 bg-slate-50 rounded-xl border border-slate-200">
+                    <div class="text-5xl mb-3">✅</div>
+                    <h3 class="text-xl font-bold mb-2 text-slate-900">3. Décision</h3>
+                    <p class="text-slate-600">La décision est tracée dans un ADR (Architecture Decision Record) et partagée à tous pour une transparence totale.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 md:mb-16">
+            <div class="p-6 md:p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+                <h2 class="text-3xl font-bold text-center mb-8 text-slate-800">Types de Sujets Abordés</h2>
+                <div class="chart-container h-80 md:h-96">
+                    <canvas id="subjectsChart"></canvas>
+                </div>
+                <p class="text-center mt-4 text-slate-600">La TechArena traite une variété de sujets, de l'adoption de nouveaux outils à l'évolution des standards existants pour répondre aux besoins des projets.</p>
+            </div>
+            <div class="p-6 md:p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+                <h2 class="text-3xl font-bold text-center mb-8 text-slate-800">Répartition des Issues</h2>
+                 <div class="chart-container h-80 md:h-96">
+                    <canvas id="outcomesChart"></canvas>
+                </div>
+                <p class="text-center mt-4 text-slate-600">La majorité des propositions aboutissent à une adoption ou une évolution, démontrant une dynamique collaborative et constructive.</p>
+            </div>
+        </section>
+        
+        <section id="actors" class="p-6 md:p-8 bg-white rounded-2xl shadow-sm border border-slate-200 mb-12 md:mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 text-slate-800">Le Quorum Décisionnaire : Une Vision à 360°</h2>
+            <div class="flex flex-wrap justify-center gap-6 text-center">
+                <div class="p-4 bg-slate-50 rounded-lg flex-grow basis-36">
+                    <div class="text-4xl mb-2">🏛️</div>
+                    <div class="font-bold text-slate-900">Architecte</div>
+                    <div class="text-sm text-slate-600">Garant de la vision long-terme</div>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-lg flex-grow basis-36">
+                    <div class="text-4xl mb-2">🔧</div>
+                    <div class="font-bold text-slate-900">Représentant AL</div>
+                    <div class="text-sm text-slate-600">Expert de la plateforme</div>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-lg flex-grow basis-36">
+                    <div class="text-4xl mb-2">🧑‍💻</div>
+                    <div class="font-bold text-slate-900">2x Tech Leads</div>
+                    <div class="text-sm text-slate-600">Voix de l'expertise technique</div>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-lg flex-grow basis-36">
+                    <div class="text-4xl mb-2">📈</div>
+                    <div class="font-bold text-slate-900">2x Product Owners</div>
+                    <div class="text-sm text-slate-600">Voix du besoin produit</div>
+                </div>
+                 <div class="p-4 bg-slate-50 rounded-lg flex-grow basis-36">
+                    <div class="text-4xl mb-2">🛡️</div>
+                    <div class="font-bold text-slate-900">PRODSEC</div>
+                    <div class="text-sm text-slate-600">Garant de la sécurité</div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="text-center border-t border-slate-200 pt-8">
+            <p class="font-bold text-lg text-slate-800">Prêt à proposer un sujet ?</p>
+            <p class="text-slate-600">Consultez le processus détaillé et utilisez le template de proposition.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const wrapLabel = (str, maxWidth) => {
+            if (str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            let lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        };
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+              return label.join(' ');
+            }
+            return label;
+        };
+        
+        const brilliantBlues = {
+            dark: '#0D47A1',
+            medium: '#1976D2',
+            light: '#42A5F5',
+            veryLight: '#BBDEFB',
+            accent: '#FFC107' 
+        };
+
+        const subjectsCtx = document.getElementById('subjectsChart').getContext('2d');
+        const subjectsChart = new Chart(subjectsCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Évolution de Standard', 'Introduction Nouvel Outil', 'Pattern d\'Architecture', 'Besoin d\'Arbitrage'].map(l => wrapLabel(l, 16)),
+                datasets: [{
+                    label: 'Nombre de sujets',
+                    data: [8, 5, 3, 6],
+                    backgroundColor: [brilliantBlues.medium, brilliantBlues.light, brilliantBlues.veryLight, brilliantBlues.dark],
+                    borderColor: brilliantBlues.dark,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        const outcomesCtx = document.getElementById('outcomesChart').getContext('2d');
+        const outcomesChart = new Chart(outcomesCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['✅ Standard Adopté', '🔄 En Évolution', '⚠️ Dérogation Accordée', '❌ Rejeté'],
+                datasets: [{
+                    label: 'Répartition en %',
+                    data: [60, 20, 15, 5],
+                    backgroundColor: [brilliantBlues.medium, brilliantBlues.light, brilliantBlues.accent, '#ef4444'],
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                 plugins: {
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    },
+                    legend: {
+                        position: 'bottom',
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
